@@ -10,6 +10,7 @@ title.className = 'app__title';
 
 const input = document.createElement('input');
 input.placeholder = 'Enter Text';
+input.className = 'app__input';
 
 mainElement.append(title, input); // appenden, damit es auf Seite sichtbar wird
 
