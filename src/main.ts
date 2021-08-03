@@ -9,6 +9,9 @@ title.innerText = 'Rick and Morty';
 
 mainElement.append(title);
 
+const input = document.createElement('input');
+input.placeholder = 'Enter Text';
+
 if (app !== null) {
   app.append(mainElement);
 }
