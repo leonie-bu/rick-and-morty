@@ -6,6 +6,7 @@ const mainElement = document.createElement('main');
 
 const title = document.createElement('h1');
 title.innerText = 'Rick and Morty';
+title.className = 'app__title';
 
 const input = document.createElement('input');
 input.placeholder = 'Enter Text';
