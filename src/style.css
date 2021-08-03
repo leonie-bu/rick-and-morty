@@ -14,3 +14,8 @@
   font-size: 4rem;
   color: lightgreen;
 }
+
+.app__input {
+  color: lightseagreen;
+  border: lime 2px dotted;
+}
