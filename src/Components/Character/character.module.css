@@ -1,0 +1,31 @@
+.card {
+  background: #3c3e44;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 1fr;
+  grid-gap: 2em;
+  border-radius: 1em;
+  height: 13em;
+}
+
+.image {
+  height: inherit;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.info {
+  color: limegreen;
+  text-align: left;
+  font-family: 'Karla', sans-serif;
+}
+
+@media (max-width: 500px) {
+  .info {
+    color: magenta;
+  }
+}
+
+p {
+  font-weight: lighter;
+}
