@@ -3,7 +3,7 @@ export type Character = {
   status: string;
   location: string;
   where: string;
-  image: string;
+  thumbnail: string;
 };
 
 export type CharacterFromAPI = {

@@ -12,14 +12,14 @@ const characters: Character[] = [
     status: '💚 Alive & Human',
     location: 'Last known location',
     where: 'Earth',
-    image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
+    thumbnail: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
   },
   {
     name: 'Morty Smith',
     status: '💚 Alive & Human',
     location: 'Last known location',
     where: 'Earth',
-    image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
+    thumbnail: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
   },
 ];
 

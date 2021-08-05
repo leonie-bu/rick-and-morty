@@ -7,14 +7,14 @@ export function createCharacterCard({
   status,
   location,
   where,
-  image,
+  thumbnail,
 }: Character): HTMLElement {
   return createElement('div', {
     className: styles.card,
     childElements: [
       createElement('img', {
         className: styles.image,
-        src: image,
+        src: thumbnail,
         alt: 'Head of character',
       }),
       createElement('article', {
