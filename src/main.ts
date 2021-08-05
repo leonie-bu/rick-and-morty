@@ -2,23 +2,9 @@ import { createCharacterCard } from './components/character/character'; //?????
 import './style.css';
 import { createElement } from './utils/createElement';
 import { Character } from './types';
+import { getCharacters } from './utils/api';
 
-const characters: Character[] = [
-  {
-    name: 'Rick Sanchez',
-    status: '💚 Alive & Human',
-    location: 'Last known location',
-    where: 'Earth',
-    image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
-  },
-  {
-    name: 'Morty Smith',
-    status: '💚 Alive & Human',
-    location: 'Last known location',
-    where: 'Earth',
-    image: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
-  },
-];
+const characters: Character[] = await getCharacters();
 
 const mainElement = createElement('main', {
   childElements: [
@@ -38,6 +24,8 @@ const mainElement = createElement('main', {
     }),
   ],
 });
+
+console.log(await getCharacters());
 
 const app = document.querySelector<HTMLDivElement>('#app');
 if (app !== null) {
