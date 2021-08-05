@@ -3,6 +3,8 @@ import './style.css';
 import { createElement } from './utils/createElement';
 import { Character } from './types';
 import { getCharacters } from './utils/api';
+import { CharacterFromAPI } from './types';
+import { AllCharactersFromAPI } from './types';
 
 const characters: Character[] = [
   {
@@ -39,6 +41,8 @@ const mainElement = createElement('main', {
     }),
   ],
 });
+
+console.log(await getCharacters());
 
 const app = document.querySelector<HTMLDivElement>('#app');
 if (app !== null) {
