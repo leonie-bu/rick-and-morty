@@ -3,23 +3,8 @@ import './style.css';
 import { createElement } from './utils/createElement';
 import { Character } from './types';
 import { getCharacters } from './utils/api';
-import { CharacterFromAPI } from './types';
-import { AllCharactersFromAPI } from './types';
 
-const characters: Character[] = [
-  {
-    name: 'Rick Sanchez',
-    status: '💚 Alive & Human',
-    location: 'Earth',
-    thumbnail: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
-  },
-  {
-    name: 'Morty Smith',
-    status: '💚 Alive & Human',
-    location: 'Earth',
-    thumbnail: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
-  },
-];
+const characters: Character[] = await getCharacters();
 
 const mainElement = createElement('main', {
   childElements: [
