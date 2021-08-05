@@ -20,8 +20,8 @@
   font-family: 'Karla', sans-serif;
 }
 
-.name:hover {
-  color: blue;
+h2:hover {
+  color: blueviolet;
 }
 
 @media (max-width: 500px) {
