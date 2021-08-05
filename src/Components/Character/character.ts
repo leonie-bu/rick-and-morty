@@ -23,6 +23,7 @@ export function createCharacterCard({
           createElement('h2', {
             className: styles.name,
             innerText: name,
+            href: '#',
           }),
           createElement('p', {
             className: styles.status,
