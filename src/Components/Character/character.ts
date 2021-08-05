@@ -6,7 +6,6 @@ export function createCharacterCard({
   name,
   status,
   location,
-  where,
   thumbnail,
 }: Character): HTMLElement {
   return createElement('div', {
@@ -23,17 +22,16 @@ export function createCharacterCard({
           createElement('h2', {
             className: styles.name,
             innerText: name,
-            href: '#',
           }),
           createElement('p', {
             className: styles.status,
             innerText: status,
             childElements: [
               createElement('h4', {
-                innerText: location,
+                innerText: 'Last known location',
               }),
               createElement('p', {
-                innerText: where,
+                innerText: location,
               }),
             ],
           }),

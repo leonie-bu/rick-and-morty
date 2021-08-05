@@ -10,15 +10,13 @@ const characters: Character[] = [
   {
     name: 'Rick Sanchez',
     status: '💚 Alive & Human',
-    location: 'Last known location',
-    where: 'Earth',
+    location: 'Earth',
     thumbnail: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
   },
   {
     name: 'Morty Smith',
     status: '💚 Alive & Human',
-    location: 'Last known location',
-    where: 'Earth',
+    location: 'Earth',
     thumbnail: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
   },
 ];
